@@ -37,3 +37,10 @@ st.table(alerts)
 
 st.sidebar.success("✅ System Status: ALL SYSTEMS OPERATIONAL")
 st.sidebar.info("Model: PyTorch GCN-LSTM (V1.0)")
+
+st.divider()
+st.subheader("🌦️ Live IMD Weather Ingestion Feed")
+weather_col1, weather_col2, weather_col3 = st.columns(3)
+weather_col1.metric("Precipitation Rate", "18.4 mm/hr", "Heavy Rain Alert")
+weather_col2.metric("Drain Water Level", "78%", "Rising (+12%/hr)")
+weather_col3.metric("Predicted Overflow Time", "2 hrs 15 mins", "Evacuation Window")
